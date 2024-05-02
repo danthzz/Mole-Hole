@@ -1,0 +1,185 @@
+.card {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    color: sienna;
+    font-size: 13px;
+    border-bottom: 1px solid sienna;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input, textarea{
+    border:1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: lightblue;
+}
+
+
+.submitBtn{
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: sienna;
+    padding: 5px;
+}
+
+select{
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitBtn:hover{
+    background-color: rgb(201, 145, 119);
+    cursor: pointer;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.logout{
+    background-color: red;
+}
+
+.login{
+    background-color: rgb(113, 203, 233);
+    margin-right: 10px;
+}
+
+.login:hover{
+    background-color: lightblue;
+}
+
+.sigin{
+    background-color: sienna;
+}
+
+.sigin:hover{
+    background-color: rgb(201, 145, 119);
+}
+
+.btns, .logout{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btnsUD{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.edit, .del{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.edit{
+    background-color: rgb(113, 203, 233);
+}
+
+.edit:hover{
+    background-color: lightblue;
+}
+
+.del{
+    background-color: red;
+}
+
+.del:hover{
+    background-color: rgb(255, 95, 95);
+}
+
+.confirmCont{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.confirmTitle{
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.confirmBtn{
+    margin-right: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+.s{
+    background-color: red;
+}
+
+.s:hover{
+    background-color: rgb(255, 95, 95);
+}
+
+.n{
+    background-color: rgb(113, 203, 233); 
+}
+
+.n:hover{
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 400px){
+    .card {
+        width: 130px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    form {
+        width: 130px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .confirmCont{
+        width: 140px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
